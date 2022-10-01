@@ -37,13 +37,16 @@ public class PublicTransport {
     // 오일 변경
     public void now_oil ( int use_oil){
         this.Now_Oil += use_oil;
-        System.out.println("주유량 = " + this.Now_Oil);
+        System.out.println();
+        System.out.println("현재 주유량 = " + this.Now_Oil);
     }
 
     // 출력
     public void get_states_info () {
+        System.out.println();
+        System.out.println("상태를 확인합니다");
         System.out.println(("상태 : " + status));
-        System.out.println("주유량 : " + this.Now_Oil);
+        System.out.println("남은 주유량 : " + this.Now_Oil);
         if (this.Now_Oil < 10) {
             System.out.println("주유 필요");
         }

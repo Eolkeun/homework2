@@ -8,6 +8,7 @@ public class Bus {
     // 현재 탑승 상황
     public void board(int passengers) {
         this.Now_passenger_bus += passengers;
+        System.out.println("탑승 현황");
 
         if (Now_passenger_bus > Max_passenger_bus) {
             System.out.println("최대 승객 수 초과");
@@ -15,6 +16,7 @@ public class Bus {
         } else {
             System.out.println("탑승 승객 수 = " + passengers);
             System.out.println("잔여 승객 수 = " + (this.Max_passenger_bus - passengers));
+            System.out.println();
             System.out.println("요금 확인 = " + (this.Pay * passengers));
         }
     }

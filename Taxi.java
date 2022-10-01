@@ -5,7 +5,7 @@ public class Taxi {
     String Destination = "서울역"; // 목적지
     int BasicDistance = 2000; // 기본거리
     int BasicPay = 4000; //기본요금
-    int DistanceToDestination = 2000; // 목적지까지 거리
+    int DistanceToDestination; // 목적지까지 거리
     int PayPerDistance; // 거리당 요금
     int ExtraDistance;
     int pay;
@@ -16,7 +16,14 @@ public class Taxi {
     // 목적지 장소
     public void destination() {
         Destination = "서울역";
-        System.out.println(Destination);
+        System.out.println("목적지 = "+Destination);
+    }
+
+    // 목적지까지 거리
+    public void distancetodestination(int pay) {
+        this.DistanceToDestination += pay;
+        System.out.println("목적기까지 남은거리");
+        System.out.println(2000+this.DistanceToDestination);
     }
 
 
